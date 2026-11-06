@@ -23,3 +23,8 @@ Android Chrome: open the deployed URL, menu > Add to Home screen > Install. iOS 
 ## Before personal use
 
 Replace the public evaluation API with a family access gate, rotate evaluation credentials, remove synthetic data, and repeat isolation testing. Making the GitHub repository private alone does not make the deployed application private.
+
+## Reference-led evaluation update (0.2)
+Open the profile switcher and select `بحر · تجريبي`. It contains approximate synthetic baseline measurements, a 3-day home program, daily nutrition targets and a reusable meal plan. Meal proposals count as intake only after `أكلتها — سجّل`. No age, sleep, completed workouts or weight-loss history are invented. See `RESEARCH.md` for product/health sources and licensing decisions. More contains light/dark UI examples and reference links.
+
+The idempotent fixture can be installed into this evaluation instance with `node --experimental-strip-types scripts/seed-bahr.mjs`. Never point it at a personal production environment. Workout sessions resume from online sets after refresh; the rest countdown is timestamp-based but does not promise a background alarm or persistence after a full reload.

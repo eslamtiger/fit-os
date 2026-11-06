@@ -1,0 +1,25 @@
+export const sampleProgram = {
+  label:'بداية منزلية • 4 أسابيع', note:'خطة تجربة عامة لشخص بالغ بدون إصابات معروفة. الأرقام الغذائية نقطة بداية للتقييم وليست احتياجًا شخصيًا محسوبًا؛ السن والنشاط اليومي لم يُحدّدا بعد.',
+  days:[{day:6,name:'السبت',kind:'strength',title:'قوة الجسم بالكامل'},{day:0,name:'الأحد',kind:'walk',title:'مشي + مرونة'},{day:1,name:'الإثنين',kind:'rest',title:'راحة واستشفاء'},{day:2,name:'الثلاثاء',kind:'strength',title:'قوة الجسم بالكامل'},{day:3,name:'الأربعاء',kind:'walk',title:'مشي + مرونة'},{day:4,name:'الخميس',kind:'strength',title:'قوة الجسم بالكامل'},{day:5,name:'الجمعة',kind:'rest',title:'راحة أو مشي خفيف'}],
+  warmup:['مشي في المكان 2 دقيقة','دوائر كتف وتحريك الكاحل دقيقة','سكوات خفيف وحركة مفصل الفخذ دقيقتان'],
+  stretches:[{name:'إطالة السمانة عند الحائط',cue:'الكعب على الأرض والقدم للأمام. ميل بسيط دون ألم.'},{name:'إطالة أمام الفخذ واقفًا',cue:'استند للحائط، قرّب الكعب للخلف دون تقويس أسفل الظهر.'},{name:'إطالة مثنيات الفخذ',cue:'نصف ركوع على سطح مريح، حرّك الحوض للأمام برفق.'},{name:'إطالة خلف الفخذ جالسًا',cue:'مد ساقًا وانحنِ من الحوض بظهر طويل، دون شد عنيف.'},{name:'إطالة الصدر عند الحائط',cue:'ضع الساعد على الحائط ولف الجذع برفق بعيدًا عنه.'}],
+  meals:[{id:'breakfast',meal_type:'breakfast',label:'إفطار',food_name:'بيض + عيش بلدي + زبادي + خضار',detail:'2 بيضة، 80 جم عيش بلدي، 170 جم زبادي طبيعي وخيار وطماطم',calories:620,protein_g:32,carbs_g:78,fat_g:20},
+  {id:'lunch',meal_type:'lunch',label:'غداء',food_name:'فراخ + أرز + سلطة',detail:'160 جم صدر فراخ مطهو، 250 جم أرز مطهو، سلطة، 10 جم زيت زيتون',calories:760,protein_g:58,carbs_g:96,fat_g:16},
+  {id:'snack',meal_type:'snack',label:'سناك',food_name:'لبن + موز + لوز',detail:'250 مل لبن قليل الدسم، موزة متوسطة، 20 جم لوز',calories:330,protein_g:14,carbs_g:40,fat_g:13},
+  {id:'dinner',meal_type:'dinner',label:'عشاء',food_name:'جبنة قريش + عيش + خضار',detail:'200 جم جبنة قريش، 60 جم عيش بلدي، خضار و10 جم زيت زيتون',calories:590,protein_g:46,carbs_g:54,fat_g:21}],
+  progression:['أسبوع 1: مجموعتان لكل تمرين، وتعلّم الحركة. اترك 3–4 تكرارات ممكنة.','أسبوع 2: كرر الخطة. أضف تكرارًا فقط لو الحركة مريحة والتعافي جيد.','أسبوع 3: أضف المجموعة الثالثة تدريجيًا إن أكملت المجموعات بجودة وإجهاد لا يتجاوز 7/10.','أسبوع 4: ثبّت أو حسّن التكرارات؛ خفّض مجموعة لو التعب مستمر.'],
+  nutrition:'مثال يوم يقارب 2300 سعرة، 150 جم بروتين، 268 جم كربوهيدرات و70 جم دهون. قيم الأطعمة تقريبية وتختلف بالمنتج والطهي. لا تسجّل الوجبة إلا بعد تناولها وعدّل الكمية الفعلية. راقب متوسط الوزن والجوع والأداء أسبوعين قبل أي تعديل.',
+};
+export const references=[
+ {name:'Hevy',url:'https://www.hevyapp.com/features/',use:'تسجيل المجموعات والأداء السابق والراحة في نفس المكان.',category:'تسجيل التمرين'},
+ {name:'Strong',url:'https://www.strong.app/',use:'تقليل الكتابة وأزرار واضحة أثناء التمرين.',category:'البساطة'},
+ {name:'Boostcamp',url:'https://www.boostcamp.app/',use:'خطة موزعة على الأسبوع، وتعليمات المجموعة والتكرار والراحة.',category:'البرامج'},
+ {name:'Fitbod',url:'https://fitbod.me/faqs/',use:'مراعاة الأدوات والوقت والتعافي؛ توصياتنا حتمية وتحت تحكمك.',category:'التكيّف'},
+ {name:'Cronometer',url:'https://support.cronometer.com/hc/en-us/articles/360018593112-Mobile-Diary-Overview',use:'فصل أهداف التغذية عن الوجبات المسجلة وإعادة الاستخدام.',category:'التغذية'},
+ {name:'Nike Training Club',url:'https://www.nike.com/ntc-app',use:'جمع القوة والمرونة والتعافي في رحلة واحدة.',category:'المحتوى'},
+ {name:'FitOn',url:'https://fitonapp.com/',use:'جلسات منزلية بسيطة وإظهار المدة قبل البدء.',category:'البيت'},
+ {name:'Workout.cool',url:'https://github.com/Snouzy/workout-cool',use:'مرجع لتنظيم مكتبة التمارين؛ كود MIT، دون نسخ كود أو أصول في هذا التحديث.',category:'GitHub · MIT'},
+ {name:'Liftosaur',url:'https://github.com/astashov/liftosaur',use:'قواعد تقدم واضحة وقابلة للفهم؛ AGPL-3.0، مرجع فقط.',category:'GitHub · AGPL'},
+ {name:'wger',url:'https://github.com/wger-project/wger',use:'فصل الخطط والجلسات والقياسات؛ الكود AGPL وحقوق المحتوى مستقلة.',category:'GitHub · AGPL'},
+ {name:'GetFitPro',url:'https://github.com/warpirate/GetFitPro',use:'الانتقال الواضح بين العمل والراحة وملخص الجلسة؛ مرجع MIT فقط.',category:'GitHub · MIT'},
+];

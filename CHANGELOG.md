@@ -14,3 +14,11 @@
 - Added dedicated Supabase database and Vercel API adapter with authenticated ownership RLS.
 - Kept credentials server-side; added explicit public evaluation notice.
 - Migrated frontend reads/writes from Apps Script to Supabase.
+
+## 0.2.0 — 2026-11-06
+- Added reference-led light/dark UI, mobile workout actions and desktop navigation.
+- Added Bahr synthetic home plan, warmup/stretching guidance and reusable meal suggestions stored online.
+- Reworked session recording: resume from Supabase, prevent double submits, timestamp-based rest timer, explicit failures.
+- Added real session history, waist trend and lazy-loaded charts; reduced entry bundle from ~638 kB to ~277 kB.
+- Corrected previous-session ordering and excluded future entries from weekly totals.
+- Added RESEARCH.md with first-party reference comparison and licensing decisions. No external fitness app code or media imported.

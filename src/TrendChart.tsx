@@ -1,0 +1,2 @@
+import {Area,AreaChart,CartesianGrid,ResponsiveContainer,Tooltip,XAxis,YAxis} from 'recharts';
+export default function TrendChart({data,label}:any){return <ResponsiveContainer width="100%" height={210}><AreaChart data={data}><CartesianGrid strokeDasharray="4 4" vertical={false} stroke="#92a47744"/><XAxis dataKey="date" tick={{fontSize:10}}/><YAxis domain={['auto','auto']} tick={{fontSize:10}} width={32}/><Tooltip/><Area name={label} dataKey="value" stroke="#86ac4e" fill="#b1d27c33" strokeWidth={3}/></AreaChart></ResponsiveContainer>}
