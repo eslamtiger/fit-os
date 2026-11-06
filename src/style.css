@@ -17,3 +17,4 @@
 @media(min-width:760px) and (max-width:899px){.bottom-nav{position:fixed;top:auto;bottom:0;left:0;right:0;justify-content:space-around;padding:8px 14px}.app{padding-bottom:90px}}
 @media(min-width:1100px){main:has(.hello){display:block}.hello{width:auto}.metric-grid,.quick-grid,.nutrition-card,.schedule,.goals-card{width:100%;max-width:none}.nutrition-card{position:static;margin:16px 0}.hello>.streak{margin-left:0;margin-right:20px}.quick-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(min-width:900px){.app{padding-inline-start:205px;padding-inline-end:0}.top{z-index:14}}
+.exercise-select{display:grid;gap:8px;font-size:12px;margin:18px 0}.exercise-select select{font:inherit;width:100%;border:1px solid #dce5d2;padding:12px;background:#f5f8f0;border-radius:10px;color:#3b5130}
