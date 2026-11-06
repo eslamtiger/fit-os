@@ -1,0 +1,3 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {weekDates,tempoFor} from '../src/schedule.ts';
+test('week spans Saturday to Friday without DST or UTC date drift',()=>{const week=weekDates('2026-11-06');assert.equal(week[0].date,'2026-10-31');assert.equal(week[6].date,'2026-11-06');assert.deepEqual(week.map(x=>x.day),[6,0,1,2,3,4,5]);assert.equal(new Set(week.map(x=>x.date)).size,7)});
+test('core control movements use slower return tempo and W includes a hold',()=>{assert.equal(tempoFor({exercise_id:'demo-bahr-v2-dead-bug'}),'2–1–2');assert.equal(tempoFor({exercise_id:'demo-bahr-v2-prone-w'}),'2–2–2');assert.equal(tempoFor({exercise_id:'demo-bahr-v2-squat'}),'3–1–1')});

@@ -25,3 +25,9 @@ Date: 6 November 2026. Dedicated Supabase project: `fit-os` (`nafiwpuhchtcypxpke
 - Public evaluation access remains intentional and clearly marked. RLS/credentials were not weakened or exposed. An access gate is required before using private family data.
 
 This is FIT OS V0.2 for evaluation, not a claim of V1.0 final acceptance.
+
+## V0.4 verification — 2026-11-06
+- Production build and all 9 unit tests passed.
+- Browser: bridge start/end photographs switch correctly; one synthetic bridge set saved online (session count 2 → 3); all four meal photos loaded.
+- Lunch recipe: multiplier 1.5 scales 160 g chicken → 240 g, 250 g rice → 375 g, 10 g oil → 15 g; macros scale too. Corrected oil note to follow the same multiplier.
+- No horizontal document overflow at harness sizes 360/390/412/768/1366/1920. Three stretches use real pose photos; standing quad and chest stretches retain written cues pending suitable media. Video playback depends on YouTube availability; direct source links remain available.
