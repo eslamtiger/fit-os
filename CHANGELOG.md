@@ -9,3 +9,8 @@
 - Added install manifest, SVG app icon, and service worker that caches only the app shell.
 - Production build passes; five progression unit tests pass.
 - Not deployed: Apps Script creation/deployment and live end-to-end QA require owner authorization and the deployed Web App URL.
+
+## 0.2.0 evaluation
+- Added dedicated Supabase database and Vercel API adapter with authenticated ownership RLS.
+- Kept credentials server-side; added explicit public evaluation notice.
+- Migrated frontend reads/writes from Apps Script to Supabase.
